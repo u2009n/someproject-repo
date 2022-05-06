@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Website using Html Css</title>
+    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href='css/all.css'>
+    <link rel="stylesheet" href='css/all.min.css'>
+    <link rel="stylesheet" href='css/normalize.css'>
+</head>
+<body>
+    <div class="main">
+
+        <nav>
+            <div class="logo">
+                <img src='img/logo.png'>
+            </div>
+           <div class="nav_link">
+               <ul>
+                   <li><a href="">Home</a></li>
+                   <li><a href="">Phone</a></li>
+                   <li><a href="">Acceress</a></li>
+                   <li><a href="">Card</a></li>
+               </ul>
+           </div>
+        </nav>   
+
+           <div class="information">
+              <div class="over-lay"></div> 
+               <img src="img/mobile.png" class="mobile">
+               <div id="circle">
+                 <div class="feauture one">
+                     <img src="img/camera.png" alt=''>
+                     <div>
+                         <h1>Camera</h1>
+                         <p>12MP, wide Angel lese</p>
+                     </div>
+                 </div>
+                 <div class="feauture two">
+                    <img src="img/process.png" alt=''>
+                    <div>
+                        <h1>Processs</h1>
+                        <p>Snap dragen, Pantum3</p>
+                    </div>
+                 </div>
+                 <div class="feauture three">
+                    <img src="img/display.png" alt=''>
+                    <div>
+                        <h1>Disply</h1>
+                        <p>6.5  ,Mini Drop Fullscreen</p>
+                    </div>
+                 </div>
+                 <div class="feauture four">
+                    <img src="img/baterray.png" alt=''>
+                    <div>
+                        <h1>Battery</h1>
+                        <p>5000mAH", 720h Standbay </p>
+                    </div>
+                 </div>
+               </div>
+           </div>
+      <div class="conterols">
+        <img src="img/up.png" id='btnup'></img>
+           <h3>Feautrues</h3>
+          <img src="img/down.png" id='btndown'></img>
+      </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var btnup = document.getElementById("btnup");
+        var btndown = document.getElementById("btndown");
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+        
+            btnup.onclick = function(){
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+           
+        }
+            btndown.onclick = function(){
+            rotatesum = rotatevalue + "rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+           
+        }
+
+        
+    </script>
+</body>
+</html>

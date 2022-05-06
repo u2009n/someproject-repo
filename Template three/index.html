@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universty Website  Design </title>
+    <!-- my template css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" 
+     rel="stylesheet">
+    <!-- Render Allelment Normali -->
+    <link rel="stylesheet" href="Css\normalize.css">
+    <!-- Font awesom libarary -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome
+      -free@5.15.4/css/fontawesome.min.css
+</head>
+<body>
+
+     
+
+<!-- -----Header Section----- -->
+
+    <section class="header">
+      <nav>
+          <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+          <div class="nav-links" id="navlinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Course</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+          </div>
+          <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav> 
+    <div class="text-box">
+        <h1>The Bigst University in the Nord Deutschland</h1>
+        <p>Making Website is the easest tings in the World. You
+            just need to learen HTML,Css,<br> und you are  good to go
+        </p>
+        <a href="#" class="hero-bton">Vist Us to Know More</a>
+    </div>   
+</section>
+<!-- -------Javascript for toggle Menue -------- -->
+   
+<script>
+   
+    function showMenu() {
+        var myNavlinks = document.getElementById("navlinks");
+            myNavlinks.style.right = "0";
+    }
+    function hideMenu() {
+        var myNavlinks = document.getElementById("navlinks");
+            myNavlinks.style.right = "-200px";  
+    }
+</script>
+<!-- -----Course Section----- -->
+<section class="course" >
+    <div class="main-heading">  
+        <h1> Courses We Offer</h1>
+        <p>Lorem ipusem dolor seit amet, consectetur adipiscing elit</p>
+    </div>    
+    <div class="container">
+        <div class="box">
+            <h3>Beginner Course</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Placeat, ratione delectus! 
+                Blanditiis deserunt officia accusamus, non ipsam quod quia nihil? Voluptas adipisci 
+                laborum provident ducimus quibusdam rerum autem blanditiis cumque?
+            </p>
+        </div>
+        <div class="box">
+            <h3>Intermiadet Course</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Placeat, ratione delectus! 
+                Blanditiis deserunt officia accusamus, non ipsam quod quia nihil? Voluptas adipisci 
+                laborum provident ducimus quibusdam rerum autem blanditiis cumque?
+            </p>
+        </div>
+        <div class="box">
+            <h3>Advances Course</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Placeat, ratione delectus! 
+                Blanditiis deserunt officia accusamus, non ipsam quod quia nihil? Voluptas adipisci 
+                laborum provident ducimus quibusdam rerum autem blanditiis cumque?
+            </p>
+        </div>
+    </div>
+</section>
+<!-- -----Campus Section----- -->
+<section class="campus">
+    <div class="main-heading">  
+        <h1> Our Global Campus</h1>
+        <p>Lorem ipusem dolor seit amet, consectetur adipiscing elit</p>
+    </div>    
+    <div class="container">
+        <div class="image">
+            <img src="images/khlifa.jpg" alt ="Image">
+            <div class="layer">
+                <h3>Dubai</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/londen.jpg" alt ="Image">
+            <div class="layer">
+                <h3>Londen</h3>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/newyourk.jpg" alt ="Image">
+            <div class="layer">
+                <h3>New Yourk</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -----Faclatities section----- -->
+<section class="facilities">
+  <div class="main-heading">  
+    <h1>Our Facilities</h1>
+    <p>Lorem ipusem dolor seit amet, consectetur adipiscing elit</p>
+  </div>
+  <div class="container">
+      <div class="facilities_box">
+          <img src="images/caulib.jpg" alt ="faci">
+          <h3>World Class librery</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Placeat, ratione delectus! 
+            Blanditiis deserunt officia accusamus,</p>
+      </div>
+      <div class="facilities_box">
+        <img src="images/caubask.jpg" alt ="faci">
+        <h3>Larg play Ground</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Placeat, ratione delectus! 
+          Blanditiis deserunt officia accusamus,</p>
+    </div>
+    <div class="facilities_box">
+        <img src="images/caumenza.jpg" alt ="faci">
+        <h3>Tasty and Healthy Food</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Placeat, ratione delectus! 
+          Blanditiis deserunt officia accusamus,</p>
+    </div>
+  </div>
+</section>
+<!-- -----Listimoniles----- -->
+<section class="listimoniles">
+   <div class="main-heading"> 
+    <h1>What Our Student Says</h1>
+    <p>Lorem ipusem dolor seit amet, consectetur adipiscing elit</p>
+   </div> 
+    <div class="container">
+      <div class="listimoniles-box">  
+        <img src="images/user1.jpg" alt="user1">
+         <div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugiat, 
+              perspiciatis, harum velit neque, officia consectetur in debitis molestiae quidem magni exercitationem.
+              Dolorum placeat facilis totam dolor unde, accusamus minus!
+            </p>
+           <h3>Adel Hudish</h3>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+         </div>  
+      </div>    
+      <div class="listimoniles-box">  
+        <img src="images/user2.jpg" alt="user2">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fugiat, 
+               perspiciatis, harum velit neque, officia consectetur in debitis molestiae quidem magni exercitationem.
+               Dolorum placeat facilis totam dolor unde, accusamus minus!
+             </p>
+            <h3>Linda Ernberg</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>  
+      </div>    
+    </div>
+</section>
+<!-- -----Call to Action----- -->
+<section class="cta">
+        <h1>Enroll for Our Varios Online Courses<br>
+            Any Where from the World</h1>
+         <a href="#" class="hero-bton">Contact Us</a>
+</section>
+<!-- -----Footer----- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero 
+        provident earum labore hic a voluptatem, architecto ducimus eos enim<br>, 
+        modi quas? Reprehenderit blanditiis maiores deserunt nulla quasi ullam
+         rerum animi?</p>
+         <div class="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+         </div>
+         <p>Made with <i class="far fa-heart"></i> by Easy Tutorials</i></p>
+</section>
+</body>
+</html>
+

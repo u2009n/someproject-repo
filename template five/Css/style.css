@@ -1,0 +1,135 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: "Font Awesome 5 Free";
+}
+.main{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(to right,#9c27b0,#8ecdff);
+}
+nav {
+    width:80%;
+    margin: 20px auto;
+    position: sticky;
+    z-index:1;
+    display: flex;
+    align-items:center;
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+width:150px;
+}
+.nav_link {
+    flex:1;
+    text-align: right;
+}
+.nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav_link ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.information {
+    width: 800px;
+    height: 800px;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+    position: absolute;
+}
+#circle{
+    width: 800px;
+    height: 800px;
+    top: 0;
+    left:0;
+    border-radius: 50%;    
+    position: absolute;
+    transform:rotate(0deg);
+    transition:1s;
+}
+
+.feauture {
+    position:absolute;
+    display: flex;
+    color: #fff;
+}
+.feauture img{
+    width:70px;
+}
+.feauture div {
+    margin-left: 30px;
+}
+.feauture p {
+    margin-top:3px;
+}
+.one{
+    top:350px;
+    right:10px;
+}
+.two {
+    top:90px;
+    left:280px;
+    transform:rotate(-90deg);
+}
+.three{
+    bottom:350px;
+    left:0px;
+    transform:rotate(-180deg);
+}
+.four{
+    bottom:60px;
+    right:240px;
+    transform:rotate(-270deg);
+}
+.mobile {
+    width: 200px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+}
+.conterols {
+    position: absolute;
+    right: 10%;
+    top:50%;
+    transform: translateY(-50%);
+    text-align:center;
+}
+.conterols h3{
+    margin: 10px 0;
+    color: #fff;
+}
+#btnup {
+    width:30px;
+    cursor: pointer;
+}
+
+#btndown {
+    width:30px;
+    cursor: pointer;
+}
+
+.over-lay{
+    width:0;
+    height:0;
+    border-top:400px solid #fff;
+    border-right:400px solid transparent;
+    border-bottom:400px solid #fff;
+    border-left:400px solid #fff;
+    position:absolute;
+    left:0;
+    top:0;
+}
